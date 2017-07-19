@@ -1,0 +1,19 @@
+{
+  "name": "vue-typescript-starter",
+  "version": "1.0.0",
+  "description": "A starter template for Typescript and Vue",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "ts-loader": "^2.3.0",
+    "typescript": "^2.4.1",
+    "vue": "git+https://github.com/DanielRosenwasser/vue.git#540a38fb21adb7a7bc394c65e23e6cffb36cd867",
+    "vue-loader": "^12.2.2",
+    "vue-template-compiler": "^2.4.1",
+    "webpack": "^3.3.0"
+  }
+}
