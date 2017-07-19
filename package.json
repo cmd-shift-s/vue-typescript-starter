@@ -4,6 +4,7 @@
   "description": "A starter template for Typescript and Vue",
   "scripts": {
     "build": "webpack",
+    "dev": "webpack-dev-server --hot --inline",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "license": "MIT",
@@ -14,6 +15,7 @@
     "vue": "git+https://github.com/DanielRosenwasser/vue.git#540a38fb21adb7a7bc394c65e23e6cffb36cd867",
     "vue-loader": "^12.2.2",
     "vue-template-compiler": "^2.4.1",
-    "webpack": "^3.3.0"
+    "webpack": "^3.3.0",
+    "webpack-dev-server": "^2.5.1"
   }
 }
