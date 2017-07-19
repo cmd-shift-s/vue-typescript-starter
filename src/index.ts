@@ -1,13 +1,17 @@
-import Vue from "vue";
+import Vue from "vue"
+import Greet from './components/Greet.vue'
 
 let v = new Vue({
   el: "#app",
   template: `
   <div>
     <div>Hello {{name}}!</div>
-    Name: <input v-model="name" type="text">
+    <greet :propMessage="name"></greet>
   </div>`,
   data: {
     name: "World"
+  },
+  components: {
+    Greet
   }
-});
+})
