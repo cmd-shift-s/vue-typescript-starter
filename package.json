@@ -22,7 +22,6 @@
     "karma-typescript-preprocessor2": "^1.2.1",
     "karma-webpack": "^2.0.4",
     "mocha": "^3.4.2",
-    "mocha-typescript": "^1.1.7",
     "phantomjs-prebuilt": "^2.1.14",
     "sinon": "^2.3.8",
     "ts-loader": "^2.3.0",
