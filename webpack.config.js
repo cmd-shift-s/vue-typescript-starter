@@ -11,6 +11,15 @@ module.exports = {
   module: {
     rules: [
       {
+        enforce: 'pre',
+        test: /\.tsx?$/,
+        loader: 'tslint-loader',
+        exclude: /node_modules/,
+        options: {
+          configFile: 'tslint.json'
+        }
+      },
+      {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
@@ -20,6 +29,7 @@ module.exports = {
             // other preprocessors should work out of the box, no loader config like this necessary.
             'scss': 'vue-style-loader!css-loader!sass-loader',
             'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax',
+            ts: 'ts-loader!tslint-loader',
           }
           // other vue-loader options go here
         }

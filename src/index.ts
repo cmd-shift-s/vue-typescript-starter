@@ -1,17 +1,17 @@
-import Vue from "vue"
+import Vue from 'vue'
 import Greet from './components/Greet.vue'
 
-let v = new Vue({
-  el: "#app",
+const app = new Vue({
   template: `
   <div>
     <div>Hello {{name}}!</div>
-    <greet :propMessage="name"></greet>
+    <greet :propMessage='name'></greet>
   </div>`,
   data: {
-    name: "World"
+    name: 'World'
   },
   components: {
     Greet
   }
 })
+app.$mount('#app')

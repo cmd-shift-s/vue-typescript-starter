@@ -1,0 +1,12 @@
+{
+    "defaultSeverity": "error",
+    "extends": "tslint-config-standard",
+    "jsRules": {},
+    "rules": {
+      "arrow-parens": false,
+      "generator-star-spacing": false,
+      "space-before-function-paren": false,
+      "no-consecutive-blank-lines": false
+    },
+    "rulesDirectory": []
+}
