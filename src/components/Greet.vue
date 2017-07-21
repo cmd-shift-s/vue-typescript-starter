@@ -19,10 +19,10 @@ export default class Greet extends Vue {
   propMessage: string
 
   // initial data
-  msg = 123
+  msg: string = '123'
 
   // use prop values for initial data
-  helloMsg = 'Hello, ' + this.propMessage
+  helloMsg: string = 'Hello, ' + this.propMessage
 
   // lifecycle hook
   mounted () {
