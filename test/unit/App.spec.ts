@@ -1,10 +1,11 @@
 import { expect } from 'chai'
+import { div } from './utils'
 import App from '@/App.vue'
 
 describe('App.vue', () => {
   it('should name equals World', done => {
     const vm = new App({
-      el: document.createElement('div')
+      el: div
     })
 
     expect(vm.name).to.equals('World')

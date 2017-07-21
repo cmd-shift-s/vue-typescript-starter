@@ -1,11 +1,12 @@
 import { expect } from 'chai'
-import faker from 'faker'
+import { div } from '../utils'
+import * as faker from 'faker'
 import Greet from '@/components/Greet.vue'
 
 describe('Greet.vue', () => {
   it('should msg equals 123', () => {
     const vm = new Greet({
-      el: document.createElement('div')
+      el: div
     })
 
     expect(vm.msg).to.be.a('string').and.equals('123')
@@ -13,7 +14,7 @@ describe('Greet.vue', () => {
 
   it('should returns changed computedMsg', () => {
     const vm = new Greet({
-      el: document.createElement('div')
+      el: div
     })
 
     const msg = vm.msg
