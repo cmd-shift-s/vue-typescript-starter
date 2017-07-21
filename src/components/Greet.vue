@@ -1,12 +1,7 @@
 <template>
-  <div>
-    <input v-model="msg">
-    <p>prop: {{propMessage}}</p>
-    <p>msg: {{msg}}</p>
-    <p>helloMsg: {{helloMsg}}</p>
-    <p>computed msg: {{computedMsg}}</p>
-    <button @click="greet">Greet</button>
-  </div>
+  <button class="button" @click="greet()">
+    Greeting
+  </button>
 </template>
 
 <script lang="ts">
@@ -19,20 +14,7 @@ export default class Greet extends Vue {
   propMessage: string
 
   // initial data
-  msg: string = '123'
-
-  // use prop values for initial data
-  helloMsg: string = 'Hello, ' + this.propMessage
-
-  // lifecycle hook
-  mounted () {
-    this.greet()
-  }
-
-  // computed
-  get computedMsg () {
-    return 'computed ' + this.msg
-  }
+  msg: string = `Hello ${this.propMessage}`
 
   // method
   greet () {

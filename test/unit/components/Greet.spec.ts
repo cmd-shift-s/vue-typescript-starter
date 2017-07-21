@@ -4,23 +4,15 @@ import * as faker from 'faker'
 import Greet from '@/components/Greet.vue'
 
 describe('Greet.vue', () => {
-  it('should msg equals 123', () => {
+  it('msg는 Hello Vue와 같다.', () => {
+    const propMessage = 'Vue'
     const vm = new Greet({
-      el: div
+      el: div,
+      propsData: {
+        propMessage
+      }
     })
 
-    expect(vm.msg).to.be.a('string').and.equals('123')
-  })
-
-  it('should returns changed computedMsg', () => {
-    const vm = new Greet({
-      el: div
-    })
-
-    const msg = vm.msg
-    expect(vm.computedMsg).to.equals(`computed ${msg}`)
-
-    vm.msg = faker.lorem.sentence()
-    expect(vm.computedMsg).to.not.equals(`computed ${msg}`)
+    expect(vm.msg).to.be.a('string').and.equals(`Hello ${propMessage}`)
   })
 })
