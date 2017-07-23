@@ -9,7 +9,10 @@
     "target": "es5",
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "strictNullChecks": false
+    "strictNullChecks": false,
+    "lib": [
+      "dom", "es6"
+    ]
   },
   "include": [
     "./src/**/*"
